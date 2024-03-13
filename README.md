@@ -13,7 +13,7 @@ cava 3x3x3 solo arena, tierra, grava etc
 Para que los items vayan al inventario automaticamente
 
 ### /treecapitator
-Tala un arbol entero con esta filosofia para evitar que este muy roto.
+Tala un arbol entero con esta filosofia para evitar que este muy roto.<br>
 Siendo ? un bloque de aire y x un bloque de madera
 Lo tala <br>
 x  x<br>
