@@ -12,4 +12,12 @@ cava 3x3x3 solo arena, tierra, grava etc
 ### /autopickup
 Para que los items vayan al inventario automaticamente
 
+### /treecapitator
+Tala un arbol entero con esta filosofia para evitar que este muy roto.
+
+Lo tala             Tala solo los 2 de abajo
+x  x                   x
+x                   x
+x                   x
+
 ## Obligatorio tener /op para usar los comandos del pico, hacha y pala explosiva
