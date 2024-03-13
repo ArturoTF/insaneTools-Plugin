@@ -1,0 +1,15 @@
+main: com.insaneItems.insaneItems.InsaneItemsMain
+version: 1.0.0
+name: insaneItems
+
+commands:
+  insaneitems:
+    description: El comando Version de insaneitems
+  picoexplosivo:
+    description: Otorga un pico explosivo al jugador.
+  hachaexplosiva:
+    description: Otorga un hacha explosiva al jugador.
+  palaexplosiva:
+    description: Otorga una pala explosiva al jugador.
+  autopickup:
+    description: Activa o desactiva el AutoPickup.
