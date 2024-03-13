@@ -16,8 +16,8 @@ Para que los items vayan al inventario automaticamente
 Tala un arbol entero con esta filosofia para evitar que este muy roto.
 
 Lo tala <br>
-x  x
-x
-x
+x  x<br>
+x<br>
+x<br>
 
 ## Obligatorio tener /op para usar los comandos del pico, hacha y pala explosiva
