@@ -20,4 +20,9 @@ x  x<br>
 x<br>
 x<br>
 
+No lo tala <br>
+  x<br>
+x<br>
+x<br>
+
 ## Obligatorio tener /op para usar los comandos del pico, hacha y pala explosiva
