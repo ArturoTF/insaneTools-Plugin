@@ -25,4 +25,8 @@ Tala solo los dos bloques de abajo <br>
 x<br>
 x<br>
 
-## Obligatorio tener /op para usar los comandos del pico, hacha, pala explosiva y treecapitator
+## Obligatorio tener /op para:
+- Pico explosivo<br>
+- Hacha explosiva<br>
+- Pala explosiva<br>
+- Treecapitator<br>
