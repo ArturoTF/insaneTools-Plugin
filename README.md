@@ -1,5 +1,5 @@
 # insaneTools-Plugin
-Plugin para minecraft Spigot.
+Plugin para minecraft Spigot 1.8.
 ### Pico Explosivo
 /picoexplosivo
 Pica 3x3x3 cualquier cosa
