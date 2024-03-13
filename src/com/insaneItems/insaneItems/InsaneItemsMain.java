@@ -8,6 +8,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.insaneItems.commands.AutoPickupCommand;
 import com.insaneItems.commands.ComandoVersion;
 import com.insaneItems.commands.ExplosiveToolCommand;
+import com.insaneItems.commands.TreecapitatorToolCommand;
+import com.insaneItems.enchants.DeforestEnchant;
 import com.insaneItems.enchants.ExplosiveEnchant;
 
 
@@ -21,6 +23,8 @@ PluginDescriptionFile pdFile = getDescription();
 		
 	    
 		AutoPickupCommand autoPickupCommand = new AutoPickupCommand();
+        getServer().getPluginManager().registerEvents(new DeforestEnchant(), this);
+
 	    getCommand("autopickup").setExecutor(autoPickupCommand);
 	    Bukkit.getPluginManager().registerEvents(autoPickupCommand, this);
 	    Bukkit.getPluginManager().registerEvents(new ExplosiveEnchant(), this);
@@ -41,6 +45,8 @@ PluginDescriptionFile pdFile = getDescription();
 		getCommand("picoexplosivo").setExecutor(new ExplosiveToolCommand("pickaxe"));
 	    getCommand("hachaexplosiva").setExecutor(new ExplosiveToolCommand("axe"));
 	    getCommand("palaexplosiva").setExecutor(new ExplosiveToolCommand("shovel"));
+        this.getCommand("treecapitator").setExecutor(new TreecapitatorToolCommand());
+
 	}
 	
 	

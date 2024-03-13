@@ -13,3 +13,5 @@ commands:
     description: Otorga una pala explosiva al jugador.
   autopickup:
     description: Activa o desactiva el AutoPickup.
+  treecapitator:
+    description: Otorga el hacha Treecapitator al jugador
