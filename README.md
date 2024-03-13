@@ -20,7 +20,7 @@ x  x<br>
 x<br>
 x<br>
 
-No lo tala <br>
+Tala solo los dos bloques de abajo <br>
 ?  x<br>
 x<br>
 x<br>
