@@ -60,8 +60,7 @@ public class ExplosiveEnchant implements Listener {
         } else if (toolType == Material.DIAMOND_AXE) {
             canBreak = ToolUtil.isApplicableForAxe(blockType); // Hacha solo para bloques de madera
         } else {
-            // Aquí asumimos que el pico explosivo puede romper cualquier bloque,
-            // pero puedes ajustar esta lógica según sea necesario.
+            // Aquí asumimos que el pico explosivo puede romper cualquier bloque, para cambiar esto crear un metodo isApplicableForPickaxe
             canBreak = true;
         }
 

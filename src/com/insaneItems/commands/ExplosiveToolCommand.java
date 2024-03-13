@@ -18,12 +18,20 @@ public class ExplosiveToolCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    	// si lo pones en consola
         if (!(sender instanceof Player)) {
             sender.sendMessage(ChatColor.RED + "Este comando solo puede ser usado por jugadores.");
             return true;
         }
-
+        
         Player player = (Player) sender;
+
+        // Verifica si el jugador tiene permisos de operador
+        if (!player.isOp()) {
+            player.sendMessage(ChatColor.RED + "No tienes permiso para usar este comando.");
+            return true;
+        }
+
         ItemStack tool;
 
         switch (toolType.toLowerCase()) {
@@ -31,10 +39,10 @@ public class ExplosiveToolCommand implements CommandExecutor {
                 tool = ExplosiveTools.createExplosivePickaxe();
                 break;
             case "axe":
-                tool = ExplosiveTools.createExplosiveAxe(); // Asegúrate de que este método devuelva un hacha.
+                tool = ExplosiveTools.createExplosiveAxe();
                 break;
             case "shovel":
-                tool = ExplosiveTools.createExplosiveShovel(); // Asegúrate de que este método devuelva una pala.
+                tool = ExplosiveTools.createExplosiveShovel();
                 break;
             default:
                 sender.sendMessage(ChatColor.RED + "Herramienta desconocida.");

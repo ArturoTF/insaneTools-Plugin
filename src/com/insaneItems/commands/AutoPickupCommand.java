@@ -49,7 +49,7 @@ public class AutoPickupCommand implements CommandExecutor, Listener {
         Material toolType = item.getType();
         Block centerBlock = event.getBlock();
 
-        // Verifica si la herramienta en uso tiene el lore "Explosivo I".
+        // Verifica si tiene "Explosivo I".
         if (hasExplosiveI(item)) {
             // Previene la caída natural de los ítems y el rompimiento del bloque si es necesario.
             event.setCancelled(true);
@@ -97,20 +97,18 @@ public class AutoPickupCommand implements CommandExecutor, Listener {
                 player.getInventory().addItem(drop); // Considera verificar el espacio disponible.
             }
         } else {
-            // Si autopickup no está activado, suelta los ítems en el mundo.
+            // Si autopickup no está activado, suelta los ítems normal.
             drops.forEach(drop -> block.getWorld().dropItemNaturally(block.getLocation(), drop));
         }
         block.setType(Material.AIR); // Elimina el bloque después de manejar los drops.
     }
-
-    // Tus métodos isApplicableForShovel, isApplicableForAxe, y isAutoPickupEnabled...
-
-
-  
- // Método para verificar si el auto recogido está activado para un jugador
+ 
+ // Método para verificar si el autopickup recogido está activado para un jugador
     public static boolean isAutoPickupEnabled(Player player) {
         return autoPickupEnabled.contains(player.getUniqueId());
     }
+    
+    
     public void setAutoPickupEnabled(Player player, boolean enabled) {
         if (enabled) {
             autoPickupEnabled.add(player.getUniqueId());

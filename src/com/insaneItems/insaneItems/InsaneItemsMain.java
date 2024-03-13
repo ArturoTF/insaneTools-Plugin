@@ -17,10 +17,6 @@ PluginDescriptionFile pdFile = getDescription();
 	public String version = pdFile.getVersion();
 	public String nombre = ChatColor.DARK_BLUE+""+ChatColor.BOLD+pdFile.getName()+ChatColor.RESET;
 	
-	public static void main(String[] args) {
-
-	}
-	
 	public void onEnable() {
 		
 	    
