@@ -14,7 +14,7 @@ Para que los items vayan al inventario automaticamente
 
 ### /treecapitator
 Tala un arbol entero con esta filosofia para evitar que este muy roto.
-
+Siendo ? un bloque de aire y x un bloque de madera
 Lo tala <br>
 x  x<br>
 x<br>
